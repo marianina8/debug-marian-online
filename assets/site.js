@@ -121,6 +121,14 @@
       var calLink = new URL(url).pathname.replace(/^\/+|\/+$/g, "");
       Cal("init", "debug", { origin: "https://" + host });
       Cal.ns.debug("inline", { elementOrSelector: "#booking-target", calLink: calLink, layout: "month_view" });
+      // Cal.com's free plan has no post-booking redirect, so the page sends people to /booked itself.
+      var goBooked = function (e) {
+        var d = (e && e.detail && e.detail.data) || {};
+        var uid = d.uid || (d.booking && d.booking.uid) || "";
+        if (location.pathname.indexOf("/booked") !== 0) location.href = "/booked" + (uid ? "?uid=" + encodeURIComponent(uid) : "");
+      };
+      Cal.ns.debug("on", { action: "bookingSuccessfulV2", callback: goBooked });
+      Cal.ns.debug("on", { action: "bookingSuccessful", callback: goBooked });
       Cal.ns.debug("ui", { theme: "light", cssVarsPerTheme: { light: { "cal-brand": "#1a2638" } }, hideEventTypeDetails: false });
     } else {
       // Any other booking page: plain iframe.
