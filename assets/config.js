@@ -6,7 +6,7 @@ window.SITE_CONFIG = {
   // Your Cal.com or Calendly event link, e.g.
   //   "https://cal.com/marian/debug-session"  or  "https://calendly.com/marian/debug-session"
   // In the booking tool, set the post-payment redirect to https://debug.marian.online/booked
-  bookingUrl: "",
+  bookingUrl: "https://cal.com/marian.online/debug-session",
 
   // Ad pixels. Each loads on every page; /booked also sends a Purchase worth 149 USD.
   redditPixelId: "",   // e.g. "a2_abc123def456"
