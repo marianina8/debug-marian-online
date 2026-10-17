@@ -73,10 +73,11 @@
     var clip = document.getElementById("ep02-clip");
     if (clip && C.ep02 && has(C.ep02.youtubeId)) {
       var src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(C.ep02.youtubeId) +
-        "?rel=0&modestbranding=1&start=" + (C.ep02.start | 0) + (C.ep02.end ? "&end=" + (C.ep02.end | 0) : "");
+        "?rel=0&modestbranding=1&start=" + (C.ep02.start | 0) + (C.ep02.end > 0 ? "&end=" + (C.ep02.end | 0) : "");
       clip.innerHTML = '<iframe src="' + src + '" title="Build It in Go, Ep02: the cleanest code was the most broken" ' +
         'loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>';
       clip.classList.add("is-video");
+      if (C.ep02.vertical) clip.classList.add("is-vertical");
     }
 
     /* ---------- Booking embed ---------- */

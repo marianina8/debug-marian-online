@@ -106,6 +106,7 @@ h2 { font-size: clamp(32px, 4.4vw, 40px); line-height: 1.1; }
 .clip .clip-sub { color: var(--muted-on-navy); font-size: 16px; }
 .clip.is-video { padding: 0; background: #000; }
 .clip.is-video iframe { width: 100%; height: 100%; border: 0; display: block; }
+.clip.is-vertical { aspect-ratio: 9 / 16; flex: 0 1 320px; max-width: 320px; margin: 0 auto; }
 
 .faq { padding-top: 56px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 20px; }
 .faq details { background: var(--card); border-radius: 16px; padding: 22px 24px; }

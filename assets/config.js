@@ -18,8 +18,8 @@ window.SITE_CONFIG = {
   currency: "USD",
 
   // The 30-second Ep02 clip. Video ID is the part after watch?v= in the URL.
-  ep02: { youtubeId: "", start: 0, end: 30 },
+  ep02: { youtubeId: "jey-ckNDBOM", start: 0, end: 0, vertical: true }, // the Ep02 Short
 
   // Build It in Go channel URL, used in the footer.
-  channelUrl: ""
+  channelUrl: "https://www.youtube.com/@marian.is.online"
 };
