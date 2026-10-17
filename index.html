@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" data-page="home">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debug Session: fix your AI-written code with a senior engineer · $149</title>
+<meta name="description" content="Your AI wrote it. Now it's broken. A 60-minute screen-share debug session with a senior software engineer. Most bugs get fixed during the call. $149, paid upfront.">
+<link rel="canonical" href="https://debug.marian.online/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1a2638">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="marian.online">
+<meta property="og:url" content="https://debug.marian.online/">
+<meta property="og:title" content="Your AI wrote it. Now it's broken. Let's find out why.">
+<meta property="og:description" content="A 60-minute debug session with a senior software engineer. You share your screen, we find the cause together. $149.">
+<meta property="og:image" content="https://debug.marian.online/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Your AI wrote it. Now it's broken. Debug Session with Marian, $149.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your AI wrote it. Now it's broken. Let's find out why.">
+<meta name="twitter:description" content="A 60-minute debug session with a senior software engineer. $149.">
+<meta name="twitter:image" content="https://debug.marian.online/assets/og.png">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/config.js"></script>
+<script src="/assets/site.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Debug Session",
+  "serviceType": "Software debugging consultation",
+  "description": "A 60-minute screen-share debug session with a senior software engineer for code written with AI tools like Cursor, Claude Code, Lovable, Bolt or ChatGPT.",
+  "url": "https://debug.marian.online/",
+  "provider": { "@type": "Person", "name": "Marian Montagnino", "url": "https://marian.online" },
+  "areaServed": "Worldwide",
+  "offers": { "@type": "Offer", "price": "149", "priceCurrency": "USD", "url": "https://debug.marian.online/#book", "availability": "https://schema.org/InStock" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header dark">
+  <div class="wrap">
+    <a class="brand" href="https://marian.online">marian.online</a>
+    <a class="btn btn-sm" href="#book" data-book>Book · $149</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero dark" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Marian is on call.</span></p>
+      <h1 id="hero-title">Your AI wrote it. Now it's broken. Let's find out why.</h1>
+      <p class="lede">A 60-minute debug session with a senior software engineer. You share your screen, we find the cause together, and you learn why the AI got it wrong.</p>
+      <div class="cta">
+        <a class="btn" href="#book" data-book>Book a Debug Session · $149</a>
+        <span class="fine">Paid upfront. If your bug isn't a fit, I'll refund you before the call.</span>
+      </div>
+    </div>
+    <!-- TODO: replace the highlighted line with the exact go func line from Ep02 -->
+    <figure class="code-card" aria-label="A Go handler that looked correct but lost visits">
+      <code>func visit(w, r) {</code>
+      <code class="indent hit">go func() { counts[code]++ }()</code>
+      <code class="indent">http.Redirect(w, r, url, 302)</code>
+      <code>}</code>
+      <figcaption>Looked perfect. Lost 461 of 500 visits.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section first" aria-labelledby="you-title">
+  <div class="wrap stack">
+    <h2 id="you-title">Is this you?</h2>
+    <ul class="cards">
+      <li>You built something with Cursor, Claude Code, Lovable, Bolt or ChatGPT, and it worked, until it didn't.</li>
+      <li>You've pasted the error back into the AI five times, and each fix breaks something else.</li>
+      <li>The code looks clean, so you can't tell what's wrong.</li>
+      <li>You want to keep building with AI, but you want to understand what you're shipping.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <h2>What you get</h2>
+      <ul>
+        <li>60 minutes on a screen share, focused on your one problem.</li>
+        <li>Most bugs get fixed during the call. If yours doesn't, you leave knowing exactly what's wrong and the steps to fix it.</li>
+        <li>A short written summary afterwards: the cause, the fix, and how to stop the AI from doing it again.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>How it works</h2>
+      <ol>
+        <li>Book and pay, then answer 4 quick questions about your bug.</li>
+        <li>I review your answers before the call. If it isn't a fit, I refund you.</li>
+        <li>On the call, you share your screen and drive. I guide.</li>
+        <li>You get the summary the same day.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="why-title">
+  <div class="wrap why">
+    <div class="clip" id="ep02-clip">
+      <span class="clip-tag">Build It in Go · Ep02</span>
+      <span class="clip-stat">"I'd merge it." It lost 461 of 500 visits.</span>
+      <span class="clip-sub">Five AIs, one app. The cleanest code was the most broken.</span>
+    </div>
+    <div class="why-copy">
+      <h2 id="why-title">Why me</h2>
+      <p>I'm a senior software engineer with 7 years in big tech, including the platform team for Netflix Workstations. I wrote a book on Go CLIs and speak at GopherCon.</p>
+      <p>On my channel, Build It in Go, I test AI coding tools on camera. In one test, the cleanest AI-written code was also the most broken: it lost 461 of 500 visits under load.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="faq-title">
+  <div class="wrap narrow faq">
+    <h2 id="faq-title">Questions</h2>
+    <details open>
+      <summary>What if we don't fix it in an hour?</summary>
+      <p>You'll know the cause and the next steps. If you want help finishing, book a second session or ask for a fixed-price quote, with this session's fee credited toward it.</p>
+    </details>
+    <details>
+      <summary>Do I need to give you access to my code or accounts?</summary>
+      <p>No. You share your screen and keep control the whole time.</p>
+    </details>
+    <details>
+      <summary>I'm not a developer. Is that OK?</summary>
+      <p>Yes. You don't need to understand the code to book. You'll understand more of it by the end.</p>
+    </details>
+    <details>
+      <summary>What can't you help with?</summary>
+      <p>Rebuilding a whole app, or anything that needs access to your production systems or customer data.</p>
+    </details>
+  </div>
+</section>
+
+<section id="book" class="book dark" aria-labelledby="book-title">
+  <div class="wrap narrow">
+    <h2 id="book-title">Stop pasting the error back in. Let's look at it together.</h2>
+    <p class="fine">60 minutes · $149, paid upfront · full refund before the call if your bug isn't a fit</p>
+    <div class="booking-embed" id="booking-embed">
+      <p class="booking-note">Booking opens shortly. Check back soon.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="https://marian.online">marian.online</a>
+    <nav aria-label="Footer">
+      <a href="https://www.youtube.com/" data-channel-link>Build It in Go on YouTube</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
